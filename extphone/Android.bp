@@ -1,4 +1,3 @@
-
 java_library {
     name: "extphonelib",
     provides_uses_lib: "com.qti.extphone.extphonelib",
@@ -11,6 +10,7 @@ java_library {
     ],
     system_ext_specific: true,
 
+    required: ["extphonelib.xml"],
 }
 
 java_library {
@@ -25,6 +25,7 @@ java_library {
     ],
     product_specific: true,
 
+    required: ["extphonelib_product.xml"],
 }
 
 // ==========================================
@@ -51,4 +52,3 @@ prebuilt_etc {
     product_specific: true,
 
 }
-
